@@ -47,18 +47,25 @@ Plus, we've included a special video demonstration and insights from our latest 
 - [Conclusion](#conclusion)
 
 ## The Data We Used 📊
-We utilized a corpus consisting of thousands of annotated sentences ranging from CEFR levels A1 to C2. These include textbooks, articles, and news feeds specifically curated to represent varied difficulty levels.
+We utilized a corpus consisting of 4800 sentences ranging from A1 to C2 levels.
 
 ## Coding: Using Machine Learning Techniques to Classify Text Difficulty 🖥️
-Our project applies a range of ML techniques, with a focus on Natural Language Processing (NLP). We use TensorFlow and scikit-learn for preprocessing, feature extraction, and model training. Here's a snippet of our approach:
+We first started applying the following basic ML techniques:
+- Logistic Regresssion
+- KNN
+- Decision Tree
+- Random Forest
+With a focus on Natural Language Processing (NLP). We used TFIDF and lemmatization for preprocessing and feature extraction.
 
 
 ## Video Demonstration 🎥
-Check out this video showing an amazing application of our text classifier. It highlights how the tool can dynamically adjust text content to match the reader's proficiency level.
+Check out this video showing an amazing application of our text classifier. 
 
-Kaggle Competition Rank 🏆
-Our model ranked Top 5 in the recent Kaggle competition for text classification. You can view the full competition details here.
+## Kaggle Competition Rank 🏆
+Our model ranked ...
+With a score of ...
+You can view the full competition details here.
 
-Results 📈
+## Results 📈
 
-Conclusion 🎉
+## Conclusion 🎉
