@@ -69,3 +69,11 @@ You can view the full competition details here.
 ## Results 📈
 
 ## Conclusion 🎉
+
+## Now we invite you to discover our app
+# Embed a GIF from Giphy
+
+<div style="text-align: center;">
+    <img src="https://media.giphy.com/media/SIaHSy7gMCCYru0bbu/giphy.gif" alt="The Little Prince Invisible Essence">
+    <p><a href="https://giphy.com/gifs/orchfilms-orchard-films-the-little-prince-invisible-essence-SIaHSy7gMCCYru0bbu">via GIPHY</a></p>
+</div>
