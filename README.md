@@ -59,7 +59,8 @@ With a focus on Natural Language Processing (NLP). We used TFIDF and lemmatizati
 
 
 ## Video Demonstration 🎥
-Check out this video showing an amazing application of our text classifier. 
+Check out this video showing an amazing application of our text classifier:
+https://youtu.be/ROy3S0kd6yE
 
 ## Kaggle Competition Rank 🏆
 Our model ranked ...
