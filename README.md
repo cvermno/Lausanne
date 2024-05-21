@@ -35,8 +35,8 @@ By the end of this README, you'll have a comprehensive understanding of how mach
 Plus, we've included a special video demonstration and insights from our latest Kaggle competition and a cool application of text difficulty classification!
 
 ## Meet the Team! 👥
-- **Camille** - The Logistic regression and decision tree expert corageous enough to dive into advanced CamemBERT techniques!
-- **Mariana** - The data preprocessing, kNN and Random Forest expert that loves writting read me files and thinking on cool ways to use text classification 
+- **Camille** - The Logistic regression and decision tree expert, corageous enough to dive into the advanced CamemBERT techniques! and a worderful video producer.
+- **Mariana** - The data preprocessing, kNN and Random Forest expert that loves writting read me files and implementing text classifiers into streamlit apps.
 
 ## The Menu 📖
 - [The Data We Used](#the-data-we-used)
@@ -71,6 +71,8 @@ You can view the full competition details here.
 ## Conclusion 🎉
 
 ## Now we invite you to discover our app
+https://lepetitprofcodespaces-nkb4dbpgbmujkcuhf7sey5.streamlit.app/
+
 # Embed a GIF from Giphy
 
 <div style="text-align: center;">
