@@ -95,23 +95,30 @@ Also the boundaries between A1-A2, B1-B2, and C1-C2 seem to be difficult to find
 
 Knowing this we will follow 2 main strategies, we will introduce **TF-IDF vectorization** to the training features and we will use **cross validation** and **hyperparameter fine-tunning** to improve our models.  
 
+## Results 📈
+
 After introducing TF-IDF (Term Frequency Inverse Document Frequency of records) we found out that for almost all the models the highest accuracies were obtained when training the models with both text features and word frequencies which makes sense since language difficulty is much more complicated than just word frequencies. Here a classification report for the 4 models trained with this combined approach:
+
 ![Classification Report](Results/Classification_report.png)
 
 And here the confusion matrices for the four models. Do you find something interesting?🧐
+
 ![Confusion matrices](Results/Confusion_matrix.png)
+
 It was stricking to see such a poor performance from the KNN classifier... 😢 And this is not only for the KNN classifier of course, overall we believe our models could do better so we decided to dive a bit deeper and try to find the way to improve them. It could be that default number of neighboors for the KNN Classifier (5) is not the best or, maybe giving more weight to closer neighbors could help or the euclidean distance (the line length between two points) might not be appropriate...so many questions.
 Let's use Gris Search, Bayesian optimisation and Cross validation to find answers.🤓
 
 ...Spoiler ALERT ⛔
 
 This is the best we could do:
+
 ![Improved Logistic Regression](Results/Improved_Logistic_Regression.png)
 
 Optimizing parameters is quite computational expensive and time consuming but did lead to a slight improvement. If you are curious and want to know all the details behind the optimizations we tried check out the full code here 👉 https://github.com/cvermno/ML-Project/tree/main/Code
 
 Maybe you are asking yourself as well as we did: In what sentences is this model still failing?
 Well we have an answer for you. See below a few sentences extracted fron the mistakes done by the improved Logistic regression on the test labelled data:
+
 ![Improved Logistic Regression mistakes](Results/Mistakes_lr.png)
 
 You can find the full table in the code shared above and here 👉 https://github.com/cvermno/ML-Project/tree/main/Results
@@ -139,7 +146,6 @@ With a score of 0.587
 You can view the full competition details here.
 We congratulate all our colleagues for their incredible job it was definitely a challenging first competition!
 
-## Results 📈
 
 ## Conclusion 🎉
 
