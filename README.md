@@ -99,19 +99,20 @@ After introducing TF-IDF (Term Frequency Inverse Document Frequency of records) 
 
 And here the confusion matrices for the four models. Do you find something interesting?🧐
 ![Confusion matrices](Results/Confusion_matrix.png)
-It was stricking to see such a poor performance from the KNN classifier on the sentences vectorized with TFIDF so we decided to dive a bit deeper and try to find the way to improve it. It seems from the confussion matrix that the KNN classifier labels almost all sentences as A1. 
-Since we know that our samples are evenly distributed (every difficulty class has 16% sentences), this could mean that the default parameters are not optimal. 
-- The default number of neighboors for the KNN Classifier is 5, maybe too small.
-- All points are weighted equally but maybe giving more weight to closer neighbors could help.
-- Euclidean distance or the line length between two points might not be the best to compare word frequencies.
-We will use Bayesian optimisation instead of grid search because grid search might take too long to run
+It was stricking to see such a poor performance from the KNN classifier on the sentences vectorized with TFIDF so we decided to dive a bit deeper and try to find the way to improve it. It could be that default number of neighboors for the KNN Classifier (5) is not the best or, maybe giving more weight to closer neighbors could help or the euclidean distance (the line length between two points) might not be appropriate... We will use Bayesian optimisation to answer these questions.
+
+## Now the moment you have been waiting for...The camemBERT ##
+
+![Description of the image](https://img-9gag-fun.9cache.com/photo/amg9MGy_460s.jpg)
+
+
 Next, we explored the CamemBERT model. Our approach involved three key steps to enhance the accuracy score:
 1. We adjusted the model parameters to improve performance.
 2. We preprocessed the text by lemmatizing it.
 3. We experimented with two data augmentation techniques using synonym replacement. The first technique replaced words with similar ones based on their embeddings, and the second used synonyms retrieved from NLTK's WordNet.
 
 ## Video Demonstration 🎥
-Check out this video showing an amazing application of our text classifier:
+This model is so cool that it deserves a multimedia explanation so we will stop the bla bla in this text and invite you to check out this video showing an amazing application of our text classifier:
 https://youtu.be/ROy3S0kd6yE
 
 ## Kaggle Competition Rank 🏆
