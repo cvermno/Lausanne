@@ -68,13 +68,16 @@ We selected the following features to explore:
 12. Word similarity: mean, median and variance of the pairwise cosine similarity between the word vectors 
 Are ALL these features useful though? To answer this we will perform an RFE (recursive feature elimination) ranking with the Random Forest model. This will give us a meassure of the features' importance so that we can reduce dimensionality, simplifying the model and reducing overfitting.
 ![Feature Importances](Results/Text_features.png)
+Interesting isn't it? :eyes: this gives us an innitial guiding light to train machine learning models on french sentences classifications. We will select the features: ['word_count', 'mean_similarity', 'median_similarity', 'num_syllables', 'variance_similarity', 'average_word_length', 'sentence_length', 'rare_words_count']
+and a word frequency metric called TF-IDF to build basic and advanced models. Keep reading!:point_down:
 ## Coding: Using Machine Learning Techniques to Classify Text Difficulty 🖥️
 We first started applying the following basic ML techniques:
 - Logistic Regresssion
 - KNN
 - Decision Tree
 - Random Forest
-With a focus on Natural Language Processing (NLP). We used TFIDF and lemmatization for preprocessing and feature extraction.
+We found out that for almost all the models the highest accuracies were obtained when training the models with both text features and word frequencies which makes sense since language difficulty is much more complicated than just word frequencies. Here a classification report for the 4 models trained with this combined approach:
+![Classification Report](Results/Classification_report.png)
 
 Next, we explored the CamemBERT model. Our approach involved three key steps to enhance the accuracy score:
 1. We adjusted the model parameters to improve performance.
