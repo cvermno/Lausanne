@@ -116,9 +116,7 @@ Well we have an answer for you. See below a few sentences extracted fron the mis
 
 You can find the full table in the code shared above and here 👉 https://github.com/cvermno/ML-Project/tree/main/Results
 
-Most of the mistakes are classifying as A1 sentences that are actually A2 level. The boundaries between these two levels seem very difficult to define even for simple human beings like us. Take the example of "Je ne fais pas grand-chose à la maison." simple easy sentence, not too long, uses quite common words...still it is not A1 level it is A2 because as stated in https://www.cambridgeenglish.org/Images/126011-using-cefr-principles-of-good-practice.pdf it already implies an exchange of information related to familiar and routine matters. The only way to know this subtle details is with context and deep knowledge of the french language that is why
-
-![image](https://github.com/cvermno/ML-Project/assets/160764750/68486446-f6d5-4fa1-afa9-89b6f2718726)
+Most of the mistakes are classifying as A1 sentences that are actually A2 level. The boundaries between these two levels seem very difficult to define even for simple human beings like us. Take the example of "Je ne fais pas grand-chose à la maison." simple easy sentence, not too long, uses quite common words...still it is not A1 level it is A2 because it already implies an exchange of information related to familiar and routine matters which is considered by 📚 [Cambridge](https://www.cambridgeenglish.org/Images/126011-using-cefr-principles-of-good-practice.pdf) 📚 as already level A2. The only way to know this subtle details is with context and deep knowledge of the french language that is why...🥁
 
 
 ## Now the moment you have been waiting for...The camemBERT ##
