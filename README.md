@@ -66,19 +66,45 @@ We selected the following features to explore:
 10. Named entities: words that are names of persons, organizations, locations, dates etc.
 11. Conjugations
 12. Word similarity: mean, median and variance of the pairwise cosine similarity between the word vectors 
+
 Are ALL these features useful though? To answer this we will perform an RFE (recursive feature elimination) ranking with the Random Forest model. This will give us a meassure of the features' importance so that we can reduce dimensionality, simplifying the model and reducing overfitting.
 ![Feature Importances](Results/Text_features.png)
 Interesting isn't it? :eyes: this gives us an innitial guiding light to train machine learning models on french sentences classifications. We will select the features: ['word_count', 'mean_similarity', 'median_similarity', 'num_syllables', 'variance_similarity', 'average_word_length', 'sentence_length', 'rare_words_count']
 and a word frequency metric called TF-IDF to build basic and advanced models. Keep reading!:point_down:
+
 ## Coding: Using Machine Learning Techniques to Classify Text Difficulty 🖥️
-We first started applying the following basic ML techniques:
+We first started training models with the features listed above and using the following techniques:
 - Logistic Regresssion
 - KNN
 - Decision Tree
 - Random Forest
-We found out that for almost all the models the highest accuracies were obtained when training the models with both text features and word frequencies which makes sense since language difficulty is much more complicated than just word frequencies. Here a classification report for the 4 models trained with this combined approach:
+  
+![Classification Report](Results/Classification_report_01.png)
+
+Random Forest performed the best with a 0.427 accuracy (Far away from what we want to achieve though). We will now reflect on what the strengths and weaknesses of model are to explain these results and define next steps.
+
+**Logistic Regression** is a linear model used for binary and multiclass classification by estimating class belonging probabilities with a logistic (sigmoid) function that is applied to the weighted sum of the input features. It is simple, interpretable, and works well with sparse data like TF-IDF features but as it is a linear model, it might struggle with complex, non-linear relationships in the data for example contextual information.
+Also the boundaries between A1-A2, B1-B2, and C1-C2 seem to be difficult to find as we can see from the confusion matrix highliting the limitation of a Logistic Regression linear boundary.
+
+**Decision Tree** splits the data into subsets based on feature values in a way that nodes represents features, branches decision rules, and leaves a class labels. The tree is built by choosing the feature that best separates the data according to a criterion like Gini impurity or information gain. It can capture non-linear relationships, are easy to interpret but they can easily overfit, especially with high-dimensional data like TF-IDF vectors. For example in the case of text classification, a Decision Tree might split the data first on the presence of a specific word or word frequency, then further split on other words or features until it reaches a decision.
+
+**Random Forest** is an ensemble of Decision Trees. Each tree is trained on a random subset of the data and features, and their predictions are combined (usually by voting) to make the final prediction which reduces overfitting and improves generalization. They handle well non-linear relationships, are less prone to overfitting and can manage high-dimensional data but they are more complex and harder to interpret. In our example Random Forests would build multiple Decision Trees, each potentially focusing on different features or frequencies. The ensemble would combine these to provide a robust classification.
+
+**K-Nearest Neighbors (KNN)** is a non-parametric, instance-based learning algorithm thet classifies a data point based on the majority class of its `k` nearest neighbors in the feature space. It is simple and intuitive, can capture local patterns in the data but can be computationally expensive with large datasets, as it requires storing and comparing all training samples. It can also struggle with high-dimensional data due to the curse of dimensionality.
+
+Knowing this we will follow 2 main strategies, we will introduce **TF-IDF vectorization** to the training features and we will use **cross validation** and **hyperparameter fine-tunning** to improve our models.  
+
+After introducing TF-IDF (Term Frequency Inverse Document Frequency of records) we found out that for almost all the models the highest accuracies were obtained when training the models with both text features and word frequencies which makes sense since language difficulty is much more complicated than just word frequencies. Here a classification report for the 4 models trained with this combined approach:
 ![Classification Report](Results/Classification_report.png)
 
+And here the confusion matrices for the four models. Do you find something interesting?🧐
+![Confusion matrices](Results/Confusion_matrix.png)
+It was stricking to see such a poor performance from the KNN classifier on the sentences vectorized with TFIDF so we decided to dive a bit deeper and try to find the way to improve it. It seems from the confussion matrix that the KNN classifier labels almost all sentences as A1. 
+Since we know that our samples are evenly distributed (every difficulty class has 16% sentences), this could mean that the default parameters are not optimal. 
+- The default number of neighboors for the KNN Classifier is 5, maybe too small.
+- All points are weighted equally but maybe giving more weight to closer neighbors could help.
+- Euclidean distance or the line length between two points might not be the best to compare word frequencies.
+We will use Bayesian optimisation instead of grid search because grid search might take too long to run
 Next, we explored the CamemBERT model. Our approach involved three key steps to enhance the accuracy score:
 1. We adjusted the model parameters to improve performance.
 2. We preprocessed the text by lemmatizing it.
