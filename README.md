@@ -41,7 +41,8 @@ Learning a new language can easily become overwhelming without the appropriate m
 
 ## The Menu 📖
 - [The Data We Used](#the-data-we-used)
-- [Coding: Machine Learning Techniques](#coding-using-machine-learning-techniques)
+- [Coding: Basic Machine Learning Techniques](#coding-using-machine-learning-techniques)
+- [Coding: Advanced Machine Learning Techniques](#Now-the-moment-you-have-been-waiting-for...The-camemBERT)
 - [Video Demonstration](#video-demonstration)
 - [Kaggle Competition Rank](#kaggle-competition-rank)
 - [Results](#results)
@@ -99,7 +100,26 @@ After introducing TF-IDF (Term Frequency Inverse Document Frequency of records) 
 
 And here the confusion matrices for the four models. Do you find something interesting?🧐
 ![Confusion matrices](Results/Confusion_matrix.png)
-It was stricking to see such a poor performance from the KNN classifier on the sentences vectorized with TFIDF so we decided to dive a bit deeper and try to find the way to improve it. It could be that default number of neighboors for the KNN Classifier (5) is not the best or, maybe giving more weight to closer neighbors could help or the euclidean distance (the line length between two points) might not be appropriate... We will use Bayesian optimisation to answer these questions.
+It was stricking to see such a poor performance from the KNN classifier... 😢 And this is not only for the KNN classifier of course, overall we believe our models could do better so we decided to dive a bit deeper and try to find the way to improve them. It could be that default number of neighboors for the KNN Classifier (5) is not the best or, maybe giving more weight to closer neighbors could help or the euclidean distance (the line length between two points) might not be appropriate...so many questions.
+Let's use Gris Search, Bayesian optimisation and Cross validation to find answers.🤓
+
+...Spoiler ALERT ⛔
+
+This is the best we could do:
+![Improved Logistic Regression](Results/Improved_Logistic_Regression.png)
+
+Optimizing parameters is quite computational expensive and time consuming but did lead to a slight improvement. If you are curious and want to know all the details behind the optimizations we tried check out the full code here 👉 https://github.com/cvermno/ML-Project/tree/main/Code
+
+Maybe you are asking yourself as well as we did: In what sentences is this model still failing?
+Well we have an answer for you. See below a few sentences extracted fron the mistakes done by the improved Logistic regression on the test labelled data:
+![Improved Logistic Regression mistakes](Results/Mistakes_lr.png)
+
+You can find the full table in the code shared above and here 👉 https://github.com/cvermno/ML-Project/tree/main/Results
+
+Most of the mistakes are classifying as A1 sentences that are actually A2 level. The boundaries between these two levels seem very difficult to define even for simple human beings like us. Take the example of "Je ne fais pas grand-chose à la maison." simple easy sentence, not too long, uses quite common words...still it is not A1 level it is A2 because as stated in https://www.cambridgeenglish.org/Images/126011-using-cefr-principles-of-good-practice.pdf it already implies an exchange of information related to familiar and routine matters. The only way to know this subtle details is with context and deep knowledge of the french language that is why
+
+![image](https://github.com/cvermno/ML-Project/assets/160764750/68486446-f6d5-4fa1-afa9-89b6f2718726)
+
 
 ## Now the moment you have been waiting for...The camemBERT ##
 
@@ -116,9 +136,10 @@ This model is so cool that it deserves a multimedia explanation so we will stop 
 https://youtu.be/ROy3S0kd6yE
 
 ## Kaggle Competition Rank 🏆
-Our model ranked ...
-With a score of ...
+Our model ranked 18
+With a score of 0.587
 You can view the full competition details here.
+We congratulate all our colleagues for their incredible job it was definitely a challenging first competition!
 
 ## Results 📈
 
