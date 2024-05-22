@@ -57,6 +57,10 @@ We first started applying the following basic ML techniques:
 - Random Forest
 With a focus on Natural Language Processing (NLP). We used TFIDF and lemmatization for preprocessing and feature extraction.
 
+Next, we explored the CamemBERT model. Our approach involved three key steps to enhance the accuracy score:
+- We adjusted the model parameters to improve performance.
+- We preprocessed the text by lemmatizing it.
+- We experimented with two data augmentation techniques using synonym replacement. The first technique replaced words with similar ones based on their embeddings, and the second used synonyms retrieved from NLTK's WordNet.
 
 ## Video Demonstration 🎥
 Check out this video showing an amazing application of our text classifier:
