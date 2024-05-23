@@ -149,7 +149,7 @@ Below is a summary table presenting the accuracy levels achieved for various par
    - Embedding-based substitution: substitute words with similar ones based on their embeddings. This method was highly successful, achieving the best accuracy of all models (0.5802).
    - WordNet-based substitution: replace words with synonyms retrieved from NLTK's WordNet. Although this method performed well, it did not surpass the others.
   
-The table below presents a comparison of the accuracy and loss metrics for the different CamemBERT model variations. Have a look 👀 !
+Here is a comparison of the accuracy and loss metrics for the different CamemBERT model variations. Have a look 👀 !
 
 ![CamemBERT parameters Optimization](Results/CamemBERT_results.png)
 
