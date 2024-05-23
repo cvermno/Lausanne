@@ -128,7 +128,7 @@ Most of the mistakes are classifying as A1 sentences that are actually A2 level.
 
 The neural network trainned with 1024 neurons in the first hidden layer and 512 in the second hidden layer gave an accuraci of 0.4167 and summarizing the best result we have so far for the techniques we have tried, see below a table.
 
-![Classification Report Improved Models](Results/Classification_report_improved.png)
+![Classification Report Improved Models](Results/Classification_report_improved_gd.png)
 
 Instead of spending more time at optimizing this models...🥁
 
