@@ -149,6 +149,8 @@ Below is a summary table presenting the accuracy levels achieved for various par
    - Embedding-based substitution: substitute words with similar ones based on their embeddings. This method was highly successful, achieving the best accuracy of all models (0.5802).
    - WordNet-based substitution: replace words with synonyms retrieved from NLTK's WordNet. Although this method performed well, it did not surpass the others.
 
+![CamemBERT parameters Optimization](Results/CamemBERT_results.png)
+
 ## Video Demonstration 🎥
 This model is so cool that it deserves a multimedia explanation so we will stop the bla bla in this text and invite you to check out this video showing an amazing application of our text classifier:
 https://youtu.be/ROy3S0kd6yE
