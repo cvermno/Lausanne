@@ -36,7 +36,7 @@ Learning a new language can easily become overwhelming without the appropriate m
 5. :wheelchair: **Ensuring content is accessible for readers of various proficiency levels**, particularly in multilingual contexts.
 
 ## Meet the Team! 👥
-- **Camille** - The Logistic regression and decision tree expert, corageous enough to dive into the advanced CamemBERT techniques! and a worderful video producer.
+- **Camille** - The Logistic regression and decision tree expert, corageous enough to dive into the advanced CamemBERT techniques, and a wonderful video producer!
 - **Mariana** - The data preprocessing, kNN and Random Forest expert that loves writting read me files and implementing text classifiers into streamlit apps.
 
 ## The Menu 📖
