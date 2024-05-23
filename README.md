@@ -145,11 +145,11 @@ Below is a summary table presenting the accuracy levels achieved for various par
 ![CamemBERT parameters Optimization](Results/CamemBERT_parameters.png)
 
 2. We tried preprocessing the text by lemmatizing it. However, it did not lead to any improvement compared to the basic CamemBERT model with optimized parameters.
-3. We experimented with data augmentation techniques 📈 involving "synonym" replacement. In this approach, words in the text are substituted with their synonyms to diversify the training data. The objective is to improve the robustness and generalization of machine learning models trained on the enhanced dataset. We investigated two different methods:
+3. We experimented with data augmentation techniques involving "synonym" replacement. In this approach, words in the text are substituted with their synonyms to diversify the training data. The objective is to improve the robustness and generalization of machine learning models trained on the enhanced dataset. We investigated two different methods:
    - Embedding-based substitution: substitute words with similar ones based on their embeddings. This method was highly successful, achieving the best accuracy of all models (0.5802).
    - WordNet-based substitution: replace words with synonyms retrieved from NLTK's WordNet. Although this method performed well, it did not surpass the others.
   
-The table below presents a comparison of the accuracy and loss metrics for the different CamemBERT model variations 👀:
+The table below presents a comparison of the accuracy and loss metrics for the different CamemBERT model variations. Have a look 👀 !
 
 ![CamemBERT parameters Optimization](Results/CamemBERT_results.png)
 
