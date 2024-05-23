@@ -136,6 +136,7 @@ Facing the reality that classic ML models were limited in achieving a high accur
 Our approach involved three key steps to enhance the accuracy score:
 1. We adjusted the model parameters to improve performance.
 
+![CamemBERT parameters Optimization](Results/CamemBERT_parameters_optimization.png)
 
 2. We preprocessed the text by lemmatizing it.
 3. We experimented with two data augmentation techniques using synonym replacement. The first technique replaced words with similar ones based on their embeddings, and the second used synonyms retrieved from NLTK's WordNet.
