@@ -134,7 +134,7 @@ Most of the mistakes are classifying as A1 sentences that are actually A2 level.
 Facing the reality that classic ML models were limited in achieving a high accuracy, we embarked on a quest for innovative solutions 💡. In our pursuit, we encountered the CamemBERT model, a cutting-edge neural network architecture tailored for natural language understanding tasks. ⚙️And how does it work ?⚙️ First, CamemBERT undergoes a pre-training phase where it familiarizes itself with the nuances of the French language by digesting vast amounts of text data. During this stage, it learns to comprehend relationships between words and sentences, leveraging a technique called self-attention to capture contextual dependencies effectively. Once pre-training is complete, CamemBERT can be fine-tuned for specific tasks, such as predicting the difficulty of French sentences.
 
 Our approach involved three key steps to enhance the accuracy score:
-1. We adjusted the model parameters to improve performance. Let's quickly define each of them:
+1. We adjusted the model parameters to improve performance. Let's quickly define each of the parameters:
    - Maximum length: Maximum number of words the model processes in a sentence. Longer sequences are truncated, shorter ones are padded.
    - Batch size: Number of sentences processed simultaneously during training or evaluation. Balances memory use and training speed.
    - Learning rate: Step size for updating model parameters during optimization. Balances between convergence speed and training stability.
@@ -145,9 +145,13 @@ Below is a summary table presenting the accuracy levels achieved for various par
 ![CamemBERT parameters Optimization](Results/CamemBERT_parameters.png)
 
 2. We tried preprocessing the text by lemmatizing it. However, it did not lead to any improvement compared to the basic CamemBERT model with optimized parameters.
-3. We experimented with two data augmentation techniques using synonym replacement. The first technique replaced words with similar ones based on their embeddings, and the second used synonyms retrieved from NLTK's WordNet.
+3. We experimented with two data augmentation techniques using "synonym" replacement:
+   - The first approach involved substituting words with similar ones based on their embeddings.
+   - The second approach involved replacing words with synonyms retrieved from NLTK's WordNet.
 
-   
+## Results 📈
+
+
 
 ## Video Demonstration 🎥
 This model is so cool that it deserves a multimedia explanation so we will stop the bla bla in this text and invite you to check out this video showing an amazing application of our text classifier:
