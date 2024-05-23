@@ -110,14 +110,15 @@ Let's use Gris Search, Bayesian optimisation and Cross validation to find answer
 
 ...Spoiler ALERT ⛔
 
-This is the best we could do:
+This is the best we got:
 
-![Improved Logistic Regression](Results/Improved_Logistic_Regression.png)
+![Improved Models](Results/Confusion_matrix_improved.png)
+![Classification Report Improved Models](Classification_report_improved.png)
 
 Optimizing parameters is quite computational expensive and time consuming but did lead to a slight improvement. If you are curious and want to know all the details behind the optimizations we tried check out the full code here 👉 https://github.com/cvermno/ML-Project/tree/main/Code
 
-Maybe you are asking yourself as well as we did: In what sentences is this model still failing?
-Well we have an answer for you. See below a few sentences extracted fron the mistakes done by the improved Logistic regression on the test labelled data:
+Maybe you are asking yourself as well as we did: In what sentences are the models still failing?
+Well we have an answer for you. See below as an example few sentences extracted fron the mistakes done by the improved Logistic regression on the test labelled data:
 
 ![Improved Logistic Regression mistakes](Results/Mistakes_lr.png)
 
