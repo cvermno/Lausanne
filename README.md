@@ -127,7 +127,7 @@ You can find the full table in the code shared above and here 👉 https://githu
 Most of the mistakes are classifying as A1 sentences that are actually A2 level. The boundaries between these two levels seem very difficult to define even for simple human beings like us. Take the example of "Je ne fais pas grand-chose à la maison." simple easy sentence, not too long, uses quite common words...still it is not A1 level it is A2 because it already implies an exchange of information related to familiar and routine matters which is considered by 📚 [Cambridge](https://www.cambridgeenglish.org/Images/126011-using-cefr-principles-of-good-practice.pdf) 📚 as already level A2. The only way to know this subtle details is with context and deep knowledge of the french language that is why...🥁
 
 
-## Now the moment you have been waiting for...The camemBERT ##
+## Now the moment you have been waiting for...The camemBERT 🧀
 
 ![Description of the image](https://img-9gag-fun.9cache.com/photo/amg9MGy_460s.jpg)
 
@@ -146,7 +146,7 @@ Below is a summary table presenting the accuracy levels achieved for various par
 
 2. We tried preprocessing the text by lemmatizing it. However, it did not lead to any improvement compared to the basic CamemBERT model with optimized parameters.
 3. We experimented with data augmentation techniques involving "synonym" replacement. In this approach, words in the text are substituted with their synonyms to diversify the training data. The objective is to improve the robustness and generalization of machine learning models trained on the enhanced dataset. We investigated two different methods:
-   - Embedding-based substitution: substitute words with similar ones based on their embeddings. This method was highly successful, achieving the best accuracy of all models: 0.5802.
+   - Embedding-based substitution: substitute words with similar ones based on their embeddings. This method was highly successful, achieving the best accuracy of all models (0.5802).
    - WordNet-based substitution: replace words with synonyms retrieved from NLTK's WordNet. Although this method performed well, it did not surpass the others.
 
 ## Video Demonstration 🎥
