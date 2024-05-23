@@ -143,7 +143,7 @@ https://youtu.be/ROy3S0kd6yE
 ## Kaggle Competition Rank 🏆
 Our model ranked 18
 With a score of 0.587
-You can view the full competition details here.
+You can view the full competition details here. 👉[Competition](https://www.kaggle.com/competitions/predicting-the-difficulty-of-a-french-text-e4s/overview)
 We congratulate all our colleagues for their incredible job it was definitely a challenging first competition!
 
 
