@@ -131,11 +131,16 @@ Most of the mistakes are classifying as A1 sentences that are actually A2 level.
 
 ![Description of the image](https://img-9gag-fun.9cache.com/photo/amg9MGy_460s.jpg)
 
+Facing the reality that classic ML models were limited in achieving a high accuracy, we embarked on a quest for innovative solutions. In our pursuit, we encountered the CamemBERT model, a cutting-edge neural network architecture tailored for natural language understanding tasks. And how does it work? First, CamemBERT undergoes a pre-training phase where it familiarizes itself with the nuances of the French language by digesting vast amounts of text data. During this stage, it learns to comprehend relationships between words and sentences, leveraging a technique called self-attention to capture contextual dependencies effectively. Once pre-training is complete, CamemBERT can be fine-tuned for specific tasks, such as predicting the difficulty of French sentences.
 
-Next, we explored the CamemBERT model. Our approach involved three key steps to enhance the accuracy score:
+Our approach involved three key steps to enhance the accuracy score:
 1. We adjusted the model parameters to improve performance.
+
+
 2. We preprocessed the text by lemmatizing it.
 3. We experimented with two data augmentation techniques using synonym replacement. The first technique replaced words with similar ones based on their embeddings, and the second used synonyms retrieved from NLTK's WordNet.
+
+   
 
 ## Video Demonstration 🎥
 This model is so cool that it deserves a multimedia explanation so we will stop the bla bla in this text and invite you to check out this video showing an amazing application of our text classifier:
