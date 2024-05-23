@@ -113,7 +113,7 @@ Let's use Gris Search, Bayesian optimisation and Cross validation to find answer
 This is the best we got:
 
 ![Improved Models](Results/Confusion_matrix_improved.png)
-![Classification Report Improved Models](Classification_report_improved.png)
+![Classification Report Improved Models](Results/Classification_report_improved.png)
 
 Optimizing parameters is quite computational expensive and time consuming but did lead to a slight improvement. If you are curious and want to know all the details behind the optimizations we tried check out the full code here 👉 https://github.com/cvermno/ML-Project/tree/main/Code
 
