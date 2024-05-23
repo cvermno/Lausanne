@@ -140,7 +140,7 @@ Our approach involved 3️⃣ key steps to enhance the accuracy score:
    - Learning rate: Step size for updating model parameters during optimization. Balances between convergence speed and training stability.
    - Number of epochs: Number of times the model iterates over the entire dataset. More epochs can improve learning but risk overfitting.
 
-Here is a summary table presenting the accuracy levels achieved for various parameter configurations. See how it changes!
+Here is a summary table presenting the accuracy levels achieved for various parameter configurations:
 
 ![CamemBERT parameters Optimization](Results/CamemBERT_parameters.png)
 
